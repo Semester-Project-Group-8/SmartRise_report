@@ -1,0 +1,51 @@
+\definecolor{titlebg}{RGB}{238, 229, 210}
+\definecolor{cisgray}{RGB}{120,120,120}
+\setmainfont{Arial}
+
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{0.5cm}
+
+\pagestyle{fancy}
+
+\fancyhf{} 
+    
+\fancyhead[C]{% 
+{\color{cisgray}\fontsize{8pt}{10pt}\selectfont SmartRise} } 
+    
+\fancyfoot[C]{% 
+{\color{cisgray}\fontsize{9pt}{11pt}\selectfont \thepage} } 
+    
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+
+\fancypagestyle{plain}{ 
+    \fancyhf{} 
+    
+    \fancyhead[C]{% 
+    {\color{cisgray} \fontsize{8pt}{10pt}\selectfont SmartRise} } 
+    
+    \fancyfoot[C]{% 
+    {\color{cisgray} \fontsize{9pt}{11pt}\selectfont \thepage} } 
+    
+    \renewcommand{\headrulewidth}{0pt} 
+    \renewcommand{\footrulewidth}{0pt} 
+}
+
+%chapter title thing
+\titleformat{\chapter} 
+{\fontsize{33pt}{40pt}\bfseries} 
+{\thechapter.} 
+{0.5em} 
+{}
+
+\titleformat{\section} 
+{\fontsize{24pt}{29pt}\bfseries} 
+{\thesection.} 
+{0.5em} 
+{}
+
+\titleformat{\subsection} 
+{\fontsize{18pt}{22pt}\bfseries} 
+{\thesubsection.} 
+{0.5em} 
+{}

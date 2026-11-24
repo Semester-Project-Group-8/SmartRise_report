@@ -1,0 +1,49 @@
+% Creates an A4 report document with 12pt text
+\documentclass[12pt,a4paper]{report}
+
+%Packages
+\input{preamble/packages}
+\input{preamble/settings}
+\input{preamble/bibliography}
+
+\begin{document}
+
+
+%intro
+\input{intro/titlepage}
+\clearpage
+\setcounter{page}{2}
+\input{intro/contributions}
+\nopagecolor
+\input{intro/abstract}
+\input{intro/genai}
+
+%table of contents
+\tableofcontents
+
+%table of tables
+\listoftables
+\listoffigures
+
+%chapters
+\input{chapters/introduction}
+\input{chapters/methodology}
+\input{chapters/problem_analysis}
+\input{chapters/requirenments}
+\input{chapters/design}
+\input{chapters/implementation}
+\input{chapters/validation}
+\input{chapters/conclusion}
+
+%references
+%\printbibliography
+\input{appendix/references_temp} % remove when we actually have references
+
+%appendix
+\input{appendix/appendix}
+
+%last page
+\input{appendix/lastpage}
+
+
+\end{document}
